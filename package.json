@@ -1,0 +1,22 @@
+{
+  "name": "inf-chatbot",
+  "version": "1.0.0",
+  "description": "A chatbot for the informatics group chat",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bnelo12/inf-chatbot.git"
+  },
+  "author": "Ben Elo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bnelo12/inf-chatbot/issues"
+  },
+  "homepage": "https://github.com/bnelo12/inf-chatbot#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
