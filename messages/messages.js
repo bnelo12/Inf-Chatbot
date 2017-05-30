@@ -30,11 +30,11 @@ const welcomeMessage = {
     }
 };
 
-const examsMessage = {
+const examMessage = {
 
 }
 
 export default {
     welcomeMessage,
-    examsMesage
+    examMessage
 } 
