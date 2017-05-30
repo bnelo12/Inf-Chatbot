@@ -11,7 +11,7 @@ const welcomeMessage = {
                         {
                             type: "postback",
                             title: "Get Exam Times",
-                            payload: "DEVELOPER_DEFINED_PAYLOAD"
+                            payload: "exam"
                         },
                         {
                             type: "postback",
@@ -30,6 +30,11 @@ const welcomeMessage = {
     }
 };
 
+const examsMessage = {
+
+}
+
 export default {
-    welcomeMessage
+    welcomeMessage,
+    examsMesage
 } 

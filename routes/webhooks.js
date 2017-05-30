@@ -22,6 +22,8 @@ router.post('/', (req, res) => {
             entry.messaging.forEach(function(event) {
                 if (event.message) {
                     receiveAPI.receivedMessage(event);
+                } if (event.postback) {
+                    receiveAPI.receivedPostback(event);
                 } else {
                     console.log("Webhook received unknown event: ", event);
                 }
@@ -30,34 +32,5 @@ router.post('/', (req, res) => {
         res.sendStatus(200);
     }
 });
-
-function sendWelcomeMessage(recipientId) {
-    var messageData = {
-        recipient: {
-            id: recipientId
-        },
-        message: {
-            attachment: {
-                type: "template",
-                payload: {
-                    template_type: "button",
-                    text: "Welcome to Inf-bot! Press 'Get Started!' for info on informatics courses.",
-                    buttons: [
-                        {
-                            type: "web_url",
-                            url: "https://petersapparel.parseapp.com",
-                            title: "Get Started!"
-                        }
-                    ]
-                }
-            }
-        }
-    };
-    sendAPI.callSendAPI(messageData);
-}
-
-function sendGenericMessage(recipientId, messageText) {
-    sendAPI.sendTextMessage(recipientId, messageText);
-}
 
 export default router;

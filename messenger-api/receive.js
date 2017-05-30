@@ -1,6 +1,19 @@
 import sendAPI from "./send"
 import messages from "../messages/messages"
 
+const receivedPostback = (event) => {
+    const senderID = event.sender.id;
+    const type = event.postback.payload;
+
+    if (type) {
+        switch (type) {
+            case 'exams':
+                sendAPI.sendAttachmentMessage(senderID, messages.welcomeMessage);
+                break; 
+        }
+    }
+}
+
 const receivedMessage = (event) => {
     var senderID = event.sender.id;
     var message = event.message;
