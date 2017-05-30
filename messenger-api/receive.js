@@ -51,5 +51,6 @@ const receivedMessage = (event) => {
 }
 
 export default {
-    receivedMessage
+    receivedMessage,
+    receivedPostback
 }
