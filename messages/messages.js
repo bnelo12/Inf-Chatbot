@@ -32,7 +32,7 @@ const welcomeMessage = {
 
 const examMessage = {
 
-}
+};
 
 export default {
     welcomeMessage,
