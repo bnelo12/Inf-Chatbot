@@ -47,7 +47,7 @@ const examMessage = {
                     buttons: [
                        {
                             type: "web_url",
-                            url: "",
+                            url: "http://www.inf.ed.ac.uk/teaching/courses/inf1/op/",
                             title: "Times",
                         }
                     ]
