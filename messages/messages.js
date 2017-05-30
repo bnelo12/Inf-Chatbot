@@ -34,7 +34,7 @@ const examMessage = {
     attachment: {
         type: "template",
         payload: {
-            text: "Here are the informatics exam times and locations."
+            text: "Here are the informatics exam times and locations.",
             template_type: "list",
             top_element_style: "compact",
             elements: [
