@@ -31,7 +31,31 @@ const welcomeMessage = {
 };
 
 const examMessage = {
-
+    attachment: {
+        type: "template",
+        payload: {
+            text: "Here are the informatics exam times and locations."
+            template_type: "list",
+            top_element_style: "compact",
+            elements: [
+                {
+                    title: "Calculus ans its Applications",
+                    subtitle: "St. Leornard's Land | 12:30"
+                },
+                {
+                    title: "Object Orientated Programming",
+                    subtitle: "Forrest Hill",
+                    buttons: [
+                       {
+                            type: "web_url",
+                            url: "",
+                            title: "Times",
+                        }
+                    ]
+                },
+            ]      
+        }
+    }
 };
 
 export default {

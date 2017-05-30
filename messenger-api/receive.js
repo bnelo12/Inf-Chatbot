@@ -10,7 +10,7 @@ const receivedPostback = (event) => {
     if (type) {
         switch (type) {
             case 'exams':
-                sendAPI.sendAttachmentMessage(senderID, messages.welcomeMessage);
+                sendAPI.sendAttachmentMessage(senderID, messages.examMessage);
                 break; 
         }
     }
