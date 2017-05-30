@@ -11,7 +11,7 @@ const welcomeMessage = {
                         {
                             type: "postback",
                             title: "Get Exam Times",
-                            payload: "exam"
+                            payload: "exams"
                         },
                         {
                             type: "postback",
