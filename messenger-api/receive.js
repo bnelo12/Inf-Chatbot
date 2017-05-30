@@ -5,6 +5,8 @@ const receivedPostback = (event) => {
     const senderID = event.sender.id;
     const type = event.postback.payload;
 
+    console.log("Postback data: ", event.postback);
+
     if (type) {
         switch (type) {
             case 'exams':
