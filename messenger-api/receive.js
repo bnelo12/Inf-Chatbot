@@ -33,24 +33,22 @@ const receivedMessage = (event) => {
     if (message.text) {
         var messageText = message.text.toLowerCase();
         var messageAttachments = message.attachments;
+        if (messageText.includes('news')) {
+                sendAPI.sendTextMessage(senderID, "Here are the latest headlines from informatics' news.");
+                sendAPI.sendTypingOn(senderID);
+                sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
+        }
+        if (messageText.includes('exam') || messageText.includes('exams')) {
+                sendAPI.sendTextMessage(senderID, "Here are the latest headlines from informatics' news.");
+                sendAPI.sendTypingOn(senderID);
+                sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
+        }
         switch (messageText) {
             case 'get started':
                 sendAPI.sendAttachmentMessage(senderID, messages.welcomeMessage);
                 break;
-            case 'help':
-                break;
-
-            case 'laundryview':
-                //sendGenericMessage(senderID, "Here is the Laundry View website.");
-                //sendGenericMessage(senderID, "http://www.laundryview.com/lvs.php");
-                break;
-            case 'quizlet':
-                //sendGenericMessage(senderID, 'Here is a link to Quizlet!');
-                //sendGenericMessage(senderID, 'TO JOIN, PLEASE LOG IN HERE: https://inf1.hgs.club/quizlet.html (username: quizlet, password: "name of where the drill hall is currently located, lowercase, no spaces")');
-                //sendGenericMessage(senderID, "https://quizlet.com/class/3543715/");
-                break;
             default:
-                //sendAPI.sendTextMessage(senderID, 'Unrecognized command. Type "help" for a list of available commands.');
+                sendAPI.sendTextMessage(senderID, 'Hi! Type "Get Started" for a list of useful commands.');
         }
     }
 }
