@@ -46,11 +46,9 @@ const receivedMessage = (event) => {
         }
         else if (messageText.includes('who are you') || messageText.includes('what are you') || messageText.includes('what is this')) {
                 sendAPI.sendTextMessage(senderID, "I am Inf Bot. I can help with exam times and Informatics news.");
-                sendAPI.sendAttachmentMessage(senderID, messages.examMessage);
         }
         else if (messageText.includes('fuck') || messageText.includes('shit') || messageText.includes('cunt')) {
                 sendAPI.sendTextMessage(senderID, "That's not very nice.");
-                sendAPI.sendAttachmentMessage(senderID, messages.examMessage);
         }
         else {
             sendAPI.sendTextMessage(senderID, 'Hi! Type "Get Started" or "list" for a list of useful commands.');
