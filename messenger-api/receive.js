@@ -50,6 +50,9 @@ const receivedMessage = (event) => {
         else if (messageText.includes('fuck') || messageText.includes('shit') || messageText.includes('cunt')) {
                 sendAPI.sendTextMessage(senderID, "That's not very nice.");
         }
+        else if (messageText.includes('you do')) {
+                sendAPI.sendTextMessage(senderID, 'I can provide you with informatics help, type "list" for some options.');
+        }
         else {
             sendAPI.sendTextMessage(senderID, 'Hi! Type "Get Started" or "list" for a list of useful commands.');
         }
