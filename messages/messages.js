@@ -90,10 +90,12 @@ const newsMessage = {
     			}
 	        ],
             buttons: [
-                title: "Read More"
-                type: "web_url",
-                url: "http://www.ed.ac.uk/informatics/news-events/news",
-                webview_height_ratio: "tall",
+                {
+                    title: "Read More",
+                    type: "web_url",
+                    url: "http://www.ed.ac.uk/informatics/news-events/news",
+                    webview_height_ratio: "tall",
+                }
             ]
 		}
 	}
