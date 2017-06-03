@@ -13,7 +13,8 @@ const receivedPostback = (event) => {
                 sendAPI.sendTextMessage(senderID, "Retrienving the exam times for you.")
                 sendAPI.sendAttachmentMessage(senderID, messages.examMessage);
                 break; 
-            case 'news':	
+            case 'news':
+                sendAPI.sendTextMessage(senderID, "Here are the latest headlines from in informatics' news.")
                 sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
                 break;
 	   } 
