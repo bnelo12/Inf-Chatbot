@@ -16,7 +16,7 @@ const welcomeMessage = {
                         {
                             type: "postback",
                             title: "Informatics News",
-                            payload: "DEVELOPER_DEFINED_PAYLOAD"
+                            payload: "news"
                         },
                         {
                             type: "postback",
@@ -52,6 +52,30 @@ const examMessage = {
             ]      
         }
     }
+};
+
+const newsMessage = {
+	attachment: {
+		type:"template",
+		payload: {
+		    template_type: "list",
+		    top_element_style: "compact",
+		    elements: [
+			{
+			    title: "Team from School of Informatics in CyberCenturion finals",
+			    subtitle: "A team from School of Informatics competed in the National Finals of CyberCenturion, a countrywide cyber defence competition led by global security company Northrop Grumman and Cabinet Office-backed Cyber Security Challenge UK, with support from the US Air Force Association."
+			},
+			{
+			    title: "Smart Robots for Intelligent Warehousing: from Research to Translation",
+			    subtitle: "Researchers from Statistical Machine Learning and Motor Control Group have recently received boost in funding from various sources to further their study on novel solutions for automated supermarkets and warehouses."
+			},
+			{
+				title:"New student society: EaRS (Embedded and Robotics Society)",
+				subtitle:"EaRS is the newest student society in the School of Informatics."
+			}
+		    ]      
+		}
+	}
 };
 
 export default {

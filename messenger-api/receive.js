@@ -13,7 +13,9 @@ const receivedPostback = (event) => {
                 sendAPI.sendTextMessage(senderID, "Retrienving the exam times for you.")
                 sendAPI.sendAttachmentMessage(senderID, messages.examMessage);
                 break; 
-        }
+        }   case 'news':	
+                sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
+                break; 
     }
 }
 
