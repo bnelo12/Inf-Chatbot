@@ -10,11 +10,12 @@ const receivedPostback = (event) => {
     if (type) {
         switch (type) {
             case 'exams':
-                sendAPI.sendTextMessage(senderID, "Retrienving the exam times for you.")
+                sendAPI.sendTextMessage(senderID, "Retrienving the exam times for you.");
                 sendAPI.sendAttachmentMessage(senderID, messages.examMessage);
                 break; 
             case 'news':
-                sendAPI.sendTextMessage(senderID, "Here are the latest headlines from in informatics' news.")
+                sendAPI.sendTextMessage(senderID, "Here are the latest headlines from informatics' news.");
+                sendAPI.sendTypingOn(senderID);
                 sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
                 break;
 	   } 

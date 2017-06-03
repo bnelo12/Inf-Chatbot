@@ -38,7 +38,7 @@ const examMessage = {
             top_element_style: "compact",
             elements: [
                 {
-                    title: "Calculus ans its Applications",
+                    title: "Calculus and its Applications",
                     subtitle: "St. Leornard's Land | 19/05/17  12:30"
                 },
                 {
