@@ -72,11 +72,21 @@ const newsMessage = {
     			},
     			{
     			    title: "Smart Robots for Intelligent Warehousing: from Research to Translation",
-    			    subtitle: "Researchers from Statistical Machine Learning and Motor Control Group..."
+    			    subtitle: "Researchers from Statistical Machine Learning and Motor Control Group...",
+                    default_action: {
+                        type: "web_url",
+                        url: "http://www.ed.ac.uk/informatics/news-events/news/smart-robots-intelligent-warehousing",
+                        webview_height_ratio: "tall",
+                    }
     			},
     			{
     				title:"New student society: EaRS (Embedded and Robotics Society)",
-    				subtitle:"EaRS is the newest student society in the School of Informatics."
+    				subtitle:"EaRS is the newest student society in the School of Informatics.",
+                    default_action: {
+                        type: "web_url",
+                        url: "http://www.ed.ac.uk/informatics/news-events/news/new-student-society-ears",
+                        webview_height_ratio: "tall",
+                    }
     			}
 	        ]      
 		}
