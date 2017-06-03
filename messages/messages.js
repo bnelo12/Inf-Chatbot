@@ -83,9 +83,8 @@ const newsMessage = {
     				title:"New student society: EaRS (Embedded and Robotics Society)",
     				subtitle:"EaRS is the newest student society in the School of Informatics.",
                     default_action: {
-                        title: "View More",
                         type: "web_url",
-                        url: "http://www.ed.ac.uk/informatics/news-events/news/new-student-society-ears",
+                        url: "http://www.ed.ac.uk/informatics/news-events/news",
                         webview_height_ratio: "tall",
                     }
     			}
