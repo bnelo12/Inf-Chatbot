@@ -20,7 +20,7 @@ const welcomeMessage = {
                         },
                         {
                             type: "postback",
-                            title: "Useful Information",
+                            title: "Other Commands",
                             payload: "DEVELOPER_DEFINED_PAYLOAD"
                         }                          
                     ]
