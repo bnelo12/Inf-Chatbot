@@ -55,6 +55,7 @@ const examMessage = {
 };
 
 const newsMessage = {
+    attachment: {
         type: "template",
         payload: {
             template_type: "list",
