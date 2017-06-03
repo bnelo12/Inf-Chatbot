@@ -33,22 +33,19 @@ const receivedMessage = (event) => {
     if (message.text) {
         var messageText = message.text.toLowerCase();
         var messageAttachments = message.attachments;
-        if (messageText.includes('news')) {
+        if (messageText.includes('get started') || messageText.includes('list')) {
+            sendAPI.sendAttachmentMessage(senderID, messages.welcomeMessage);
+        }
+        else if (messageText.includes('news')) {
                 sendAPI.sendTextMessage(senderID, "Here are the latest headlines from informatics' news.");
-                sendAPI.sendTypingOn(senderID);
                 sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
         }
-        if (messageText.includes('exam') || messageText.includes('exams')) {
-                sendAPI.sendTextMessage(senderID, "Here are the latest headlines from informatics' news.");
-                sendAPI.sendTypingOn(senderID);
-                sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
+        else if (messageText.includes('exam') || messageText.includes('exams')) {
+                sendAPI.sendTextMessage(senderID, "Retrienving the exam times for you.");
+                sendAPI.sendAttachmentMessage(senderID, messages.examMessage);
         }
-        switch (messageText) {
-            case 'get started':
-                sendAPI.sendAttachmentMessage(senderID, messages.welcomeMessage);
-                break;
-            default:
-                sendAPI.sendTextMessage(senderID, 'Hi! Type "Get Started" for a list of useful commands.');
+        else {
+            sendAPI.sendTextMessage(senderID, 'Hi! Type "Get Started" or "list" for a list of useful commands.');
         }
     }
 }
