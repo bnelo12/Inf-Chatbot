@@ -84,16 +84,17 @@ const newsMessage = {
     				subtitle:"EaRS is the newest student society in the School of Informatics.",
                     default_action: {
                         type: "web_url",
-                        url: "http://www.ed.ac.uk/informatics/news-events/news",
+                        url: "http://www.ed.ac.uk/informatics/news-events/news/new-student-society-ears",
                         webview_height_ratio: "tall",
                     }
     			}
 	        ],
-            buttons: {
+            buttons: [
+                title: "Read More"
                 type: "web_url",
-                url: "http://www.ed.ac.uk/informatics/news-events/news/team-school-of-informatics-cybercenturion-finals",
+                url: "http://www.ed.ac.uk/informatics/news-events/news",
                 webview_height_ratio: "tall",
-            }
+            ]
 		}
 	}
 };
