@@ -39,19 +39,16 @@ const examMessage = {
             elements: [
                 {
                     title: "Calculus ans its Applications",
-                    subtitle: "St. Leornard's Land | 12:30"
+                    subtitle: "St. Leornard's Land | 19/05/17  12:30"
                 },
                 {
                     title: "Object Orientated Programming",
-                    subtitle: "Forrest Hill",
-                    buttons: [
-                       {
-                            type: "web_url",
-                            url: "http://www.inf.ed.ac.uk/teaching/courses/inf1/op/",
-                            title: "Times",
-                        }
-                    ]
+                    subtitle: "Forrest Hill | 10/05/17 09:30"
                 },
+		{
+			title:"Data Analysis",
+			subtitile:"Pleasence Sports Hall | 15/05/17 09:30"
+		}
             ]      
         }
     }
