@@ -63,11 +63,11 @@ const newsMessage = {
 		    elements: [
 			{
 			    title: "Team from School of Informatics in CyberCenturion finals",
-			    subtitle: "A team from School of Informatics competed in the National Finals of CyberCenturion, a countrywide cyber defence competition led by global security company Northrop Grumman and Cabinet Office-backed Cyber Security Challenge UK, with support from the US Air Force Association."
+			    subtitle: "A team from School of Informatics competed..."
 			},
 			{
 			    title: "Smart Robots for Intelligent Warehousing: from Research to Translation",
-			    subtitle: "Researchers from Statistical Machine Learning and Motor Control Group have recently received boost in funding from various sources to further their study on novel solutions for automated supermarkets and warehouses."
+			    subtitle: "Researchers from Statistical Machine Learning and Motor Control Group..."
 			},
 			{
 				title:"New student society: EaRS (Embedded and Robotics Society)",
