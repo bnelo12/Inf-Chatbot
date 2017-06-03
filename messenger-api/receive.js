@@ -36,7 +36,7 @@ const receivedMessage = (event) => {
         if (messageText.includes('get started') || messageText.includes('list') || messageText.includes('help')) {
             sendAPI.sendAttachmentMessage(senderID, messages.welcomeMessage);
         }
-        else if (messageText.includes('news')) {
+        else if (messageText.includes('news') || messageText.includes('headlines')) {
                 sendAPI.sendTextMessage(senderID, "Here are the latest headlines from Informatics news.");
                 sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
         }
