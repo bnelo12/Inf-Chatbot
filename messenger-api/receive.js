@@ -47,11 +47,14 @@ const receivedMessage = (event) => {
         else if (messageText.includes('who are you') || messageText.includes('what are you') || messageText.includes('what is this')) {
                 sendAPI.sendTextMessage(senderID, "I am Inf Bot. I can help with exam times and Informatics news.");
         }
-        else if (messageText.includes('fuck') || messageText.includes('shit') || messageText.includes('cunt')) {
-                sendAPI.sendTextMessage(senderID, "That's not very nice.");
-        }
         else if (messageText.includes('can you') || messageText.includes('you do')) {
                 sendAPI.sendTextMessage(senderID, 'I can provide you with informatics help, type "list" for some options.');
+        }
+        else if (messageText.includes('thank')) {
+                sendAPI.sendTextMessage(senderID, "You're welcome! Let me know if you need anything else.");
+        }
+        else if (messageText.includes('fuck') || messageText.includes('shit') || messageText.includes('cunt')) {
+                sendAPI.sendTextMessage(senderID, "That's not very nice.");
         }
         else {
             sendAPI.sendTextMessage(senderID, 'Hi! Type "Get Started" or "list" for a list of useful commands. I can also be conversational. (i.e) Ask me for the exam times.');
