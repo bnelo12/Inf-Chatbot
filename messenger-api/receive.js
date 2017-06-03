@@ -54,7 +54,7 @@ const receivedMessage = (event) => {
                 sendAPI.sendTextMessage(senderID, 'I can provide you with informatics help, type "list" for some options.');
         }
         else {
-            sendAPI.sendTextMessage(senderID, 'Hi! Type "Get Started" or "list" for a list of useful commands.');
+            sendAPI.sendTextMessage(senderID, 'Hi! Type "Get Started" or "list" for a list of useful commands. I can also be conversational. (i.e) Ask me for the exam times.');
         }
     }
 }
