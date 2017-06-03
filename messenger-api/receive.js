@@ -30,7 +30,7 @@ const receivedMessage = (event) => {
     sendAPI.sendReadReceipt(senderID);
     sendAPI.sendTypingOn(senderID);
 
-    if (messageText) {
+    if (message.text) {
         var messageText = message.text.toLowerCase();
         var messageAttachments = message.attachments;
         switch (messageText) {
