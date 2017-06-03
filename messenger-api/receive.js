@@ -16,7 +16,7 @@ const receivedPostback = (event) => {
             case 'news':	
                 sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
                 break;
-	} 
+	   } 
     }
 }
 
@@ -27,8 +27,6 @@ const receivedMessage = (event) => {
 
     var messageText = message.text.toLowerCase();
     var messageAttachments = message.attachments;
-
-    console.log("Message data: ", event.message);
 
     sendAPI.sendReadReceipt(senderID);
     sendAPI.sendTypingOn(senderID);
