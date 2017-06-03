@@ -33,7 +33,7 @@ const receivedMessage = (event) => {
     if (message.text) {
         var messageText = message.text.toLowerCase();
         var messageAttachments = message.attachments;
-        if (messageText.includes('get started') || messageText.includes('list')) {
+        if (messageText.includes('get started') || messageText.includes('list') || messageText.includes('help')) {
             sendAPI.sendAttachmentMessage(senderID, messages.welcomeMessage);
         }
         else if (messageText.includes('news')) {
