@@ -47,7 +47,7 @@ const examMessage = {
                 },
 		{
 			title:"Data Analysis",
-			subtitile:"Pleasence Sports Hall | 15/05/17 09:30"
+			subtitle:"Pleasence Sports Hall | 15/05/17 09:30"
 		}
             ]      
         }
