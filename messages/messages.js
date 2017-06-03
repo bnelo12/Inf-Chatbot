@@ -67,7 +67,6 @@ const newsMessage = {
                     default_action: {
                         type: "web_url",
                         url: "http://www.ed.ac.uk/informatics/news-events/news/team-school-of-informatics-cybercenturion-finals",
-                        messenger_extensions: true,
                         webview_height_ratio: "tall",
                     }
     			},
