@@ -27,13 +27,12 @@ const receivedMessage = (event) => {
     var message = event.message;
 
 
-    var messageText = message.text.toLowerCase();
-    var messageAttachments = message.attachments;
-
     sendAPI.sendReadReceipt(senderID);
     sendAPI.sendTypingOn(senderID);
 
     if (messageText) {
+        var messageText = message.text.toLowerCase();
+        var messageAttachments = message.attachments;
         switch (messageText) {
             case 'get started':
                 sendAPI.sendAttachmentMessage(senderID, messages.welcomeMessage);
