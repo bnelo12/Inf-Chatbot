@@ -49,7 +49,12 @@ const examMessage = {
         			title:"Data Analysis",
         			subtitle:"Pleasence Sports Hall | 15/05/17 09:30"
         		}
-            ]      
+            ],
+            "buttons":[
+                {
+                    "type":"element_share"
+                }              
+            ]     
         }
     }
 };
