@@ -63,7 +63,13 @@ const newsMessage = {
 		    elements: [
     			{
     			    title: "Team from School of Informatics in CyberCenturion finals",
-    			    subtitle: "A team from School of Informatics competed..."
+    			    subtitle: "A team from School of Informatics competed...",
+                    default_action: {
+                        type: "web_url",
+                        url: "http://www.ed.ac.uk/informatics/news-events/news/team-school-of-informatics-cybercenturion-finals",
+                        messenger_extensions: true,
+                        webview_height_ratio: "tall",
+                    }
     			},
     			{
     			    title: "Smart Robots for Intelligent Warehousing: from Research to Translation",
