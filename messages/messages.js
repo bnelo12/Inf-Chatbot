@@ -55,12 +55,11 @@ const examMessage = {
 };
 
 const newsMessage = {
-	attachment: {
-		type:"template",
-		payload: {
-		    template_type: "list",
-		    top_element_style: "compact",
-		    elements: [
+        type: "template",
+        payload: {
+            template_type: "list",
+            top_element_style: "compact",
+            elements: [
                 {
                     title: "Calculus ans its Applications",
                     subtitle: "St. Leornard's Land | 19/05/17  12:30"
@@ -73,9 +72,9 @@ const newsMessage = {
                     title:"Data Analysis",
                     subtitle:"Pleasence Sports Hall | 15/05/17 09:30"
                 }
-	        ]      
-		}
-	}
+            ]      
+        }
+    }
 };
 
 export default {
