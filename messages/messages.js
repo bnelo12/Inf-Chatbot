@@ -55,30 +55,31 @@ const examMessage = {
 };
 
 const newsMessage = {
-    attachment: {
-        type: "template",
-        payload: {
-            template_type: "list",
-            top_element_style: "compact",
-            elements: [
-                {
-                    title: "Calculus ans its Applications",
-                    subtitle: "St. Leornard's Land | 19/05/17  12:30"
-                },
-                {
-                    title: "Object Orientated Programming",
-                    subtitle: "Forrest Hill | 10/05/17 09:30"
-                },
-                {
-                    title:"Data Analysis",
-                    subtitle:"Pleasence Sports Hall | 15/05/17 09:30"
-                }
-            ]      
-        }
-    }
+	attachment: {
+		type:"template",
+		payload: {
+		    template_type: "list",
+		    top_element_style: "compact",
+		    elements: [
+    			{
+    			    title: "Team from School of Informatics in CyberCenturion finals",
+    			    subtitle: "A team from School of Informatics competed..."
+    			},
+    			{
+    			    title: "Smart Robots for Intelligent Warehousing: from Research to Translation",
+    			    subtitle: "Researchers from Statistical Machine Learning and Motor Control Group..."
+    			},
+    			{
+    				title:"New student society: EaRS (Embedded and Robotics Society)",
+    				subtitle:"EaRS is the newest student society in the School of Informatics."
+    			}
+	        ]      
+		}
+	}
 };
 
 export default {
     welcomeMessage,
-    examMessage
+    examMessage,
+    newsMessage
 } 
