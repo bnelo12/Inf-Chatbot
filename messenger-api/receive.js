@@ -41,7 +41,7 @@ const receivedMessage = (event) => {
                 sendAPI.sendAttachmentMessage(senderID, messages.newsMessage);
         }
         else if (messageText.includes('exam') || messageText.includes('exams')) {
-                sendAPI.sendTextMessage(senderID, "Retrienving the exam times for you.");
+                sendAPI.sendTextMessage(senderID, "Retrieving the exam times for you.");
                 sendAPI.sendAttachmentMessage(senderID, messages.examMessage);
         }
         else if (messageText.includes('who are you') || messageText.includes('what are you') || messageText.includes('what is this')) {

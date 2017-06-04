@@ -42,7 +42,7 @@ const examMessage = {
                     subtitle: "St. Leornard's Land | 19/05/17  12:30"
                 },
                 {
-                    title: "Object Orientated Programming",
+                    title: "Object Oriented Programming",
                     subtitle: "Forrest Hill | 10/05/17 09:30"
                 },
         		{

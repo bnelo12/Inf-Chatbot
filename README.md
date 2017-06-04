@@ -16,7 +16,7 @@ The only requirements to develop for Inf-Bot is git.
 
 `git clone https://github.com/bnelo12/inf-chatbot.git`
 
-The chatbot is a simple Express web app built on node.js. Whe you are ready to post your code live type:
+The chatbot is a simple Express web app built on node.js. When you are ready to post your code live type:
 
 `git push live master`
 
