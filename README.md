@@ -21,4 +21,4 @@ The chatbot is a simple Express web app built on node.js. When you are ready to 
 
 `git push live master`
 
-You will need a RSA key to do this, I plan to set up a test server so that development can be tested in a non live enviorment.
+You will need a RSA key to do this, I plan to set up a test server so that development can be tested in a non live enviorment. test
