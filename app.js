@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 })
 
 httpsServer.listen(8443, () => {
-    console.log('Example app listening on port 8443!')
+    console.log('Inf-Bot istening on port 8443!')
 })
 
 export default app;
