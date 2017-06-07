@@ -25,10 +25,6 @@ export const httpsServer =  https.createServer(options, app);
 
 app.use('/webhook', webhooks);
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
-
 httpsServer.listen(8443, () => {
     console.log('Inf-Bot istening on port 8443!')
 })
